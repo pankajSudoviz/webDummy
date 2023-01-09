@@ -52,6 +52,7 @@ public class StartWebGoat extends SpringBootServletInitializer {
         System.setProperty("spring.config.name", "application-webgoat");
        
         String webgoatPort  = System.getenv("WEBGOAT_PORT");
+        private dummyCICD;
         String databasePort = System.getenv("WEBGOAT_HSQLPORT"); 
         String webGoatHost = null==System.getenv("WEBGOAT_HOST")?"127.0.0.1":System.getenv("WEBGOAT_HOST");
         int goatPort = webgoatPort == null?8080:Integer.parseInt(webgoatPort);
