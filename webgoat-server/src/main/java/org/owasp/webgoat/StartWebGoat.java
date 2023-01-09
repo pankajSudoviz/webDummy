@@ -72,6 +72,7 @@ public class StartWebGoat extends SpringBootServletInitializer {
     
     private static boolean isAlreadyRunning(String host, int port) {
         try (var ignored = new Socket(host, port)) {
+            //console
             return true;
         } catch (IOException e) {
             return false;
