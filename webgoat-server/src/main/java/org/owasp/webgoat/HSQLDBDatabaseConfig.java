@@ -31,6 +31,7 @@ public class HSQLDBDatabaseConfig {
     private int hsqldbPort;
     private Server server;
     private dummy;
+    private locale;
 
     @Bean(initMethod = "start", destroyMethod = "stop")
     public Server hsqlStandalone(@Value("${webgoat.server.directory}") String directory,
