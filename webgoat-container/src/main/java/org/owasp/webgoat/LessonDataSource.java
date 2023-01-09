@@ -65,6 +65,7 @@ public class LessonDataSource implements DataSource {
 
     @Override
     public boolean isWrapperFor(Class<?> clazz) throws SQLException {
+        originalDataSource.isWrapperFor(clazz)
         return originalDataSource.isWrapperFor(clazz);
     }
 }
